@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Portfolio_Evyn/static/css/main.6c9ed167.css",
+    "main.js": "/Portfolio_Evyn/static/js/main.8ce3f603.js",
+    "static/js/453.56b1caae.chunk.js": "/Portfolio_Evyn/static/js/453.56b1caae.chunk.js",
+    "index.html": "/Portfolio_Evyn/index.html",
+    "main.6c9ed167.css.map": "/Portfolio_Evyn/static/css/main.6c9ed167.css.map",
+    "main.8ce3f603.js.map": "/Portfolio_Evyn/static/js/main.8ce3f603.js.map",
+    "453.56b1caae.chunk.js.map": "/Portfolio_Evyn/static/js/453.56b1caae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c9ed167.css",
+    "static/js/main.8ce3f603.js"
+  ]
+}
