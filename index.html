@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evyn FAURE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Evyn FAURE</h1>
+        </div>
+        <nav>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#btnVeille">Veille</a></li>
+                <li><a href="#btnStage1">Stage</a></li>
+                <li><a href="#projet">Projet</a></li>
+                <li><a href="#contact">Travaux Pratiques</a></li>
+                <li><a href="#contact">Réseau</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <section id="home">
+            <h2>Bienvenue sur mon portfolio</h2>
+            
+            <div class="image-container">
+                <img src="logo.gif" alt="Description de l'image" class="rounded-image">
+            </div>
+            <div style="height: 40px;"></div>
+            <p>Je m'appelle Evyn FAURE, étudiant en BTS Services Informatiques aux Organisations (SIO), option Solutions Logicielles et Applications Métiers (SLAM).<br><br> Passionné par l'informatique et le développement de logiciels, je suis curieux et motivé.<br><br> J'aime relever des défis techniques tout en approfondissant mes compétences en programmation, conception d'applications et gestion de projets numériques.</p>
+            <br>
+        </section>
+        
+        <div style="height: 600px;"></div>
+        <hr>
+        <div style="height: 30px;"></div>
+        <div class="veille-container">
+            <button id="btnVeille">Veille</button>
+            <button id="btnFermerVeille">Fermer</button>
+        </div>
+        
+        <section id="veille" class="veille hidden"> <!-- Assurez-vous que la section commence cachée -->
+            <h3>Intelligence Artificielle</h3>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Liens</th>
+                </tr>
+            </thead>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Septembre 2023</td>
+                    <td>OpenAI lance GPT-4 Vision, permettant une analyse avancée d'images et de texte combinée.</td>
+                    <td>
+                        <a href="https://openai.com/gpt-4v-system-card" target="_blank">OpenAI System Card</a>,
+                        <a href="https://blog.roboflow.com/gpt-4-vision-guide" target="_blank">Analyse Roboflow</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Octobre 2023</td>
+                    <td>DALL·E 3 introduit des fonctions avancées d'édition d'images à partir de descriptions textuelles.</td>
+                    <td>
+                        <a href="https://openai.com/dall-e-3" target="_blank">Présentation officielle DALL·E 3</a>,
+                        <a href="https://www.theverge.com/2023/10/17/openai-dall-e-3-launch" target="_blank">Article The Verge</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Novembre 2023</td>
+                    <td>Google DeepMind dévoile Gemini, combinant capacités linguistiques et résolution complexe.</td>
+                    <td>
+                        <a href="https://www.deepmind.com/publications/gemini" target="_blank">DeepMind Publications</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Décembre 2023</td>
+                    <td>Anthropic publie Claude 3, avec une meilleure compréhension du contexte conversationnel.</td>
+                    <td>
+                        <a href="https://www.anthropic.com/index/claude-3" target="_blank">Anthropic Claude 3</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Janvier 2024</td>
+                    <td>OpenAI présente un système d'alerte précoce pour les menaces biologiques générées par IA.</td>
+                    <td>
+                        <a href="https://openai.com/research/early-warning-system" target="_blank">Rapport OpenAI</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Février 2024</td>
+                    <td>Microsoft ajoute de nouvelles intégrations IA dans ses produits via Copilot 365.</td>
+                    <td>
+                        <a href="https://www.microsoft.com/en-us/microsoft-365/copilot" target="_blank">Microsoft 365 Copilot</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mars 2024</td>
+                    <td>Stanford publie son rapport annuel sur l'impact de l'IA dans divers secteurs.</td>
+                    <td>
+                        <a href="https://hai.stanford.edu/research/ai-index-2024" target="_blank">Stanford AI Index</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Avril 2024</td>
+                    <td>NVIDIA lance AI Workbench pour l'entraînement d'IA sur mesure.</td>
+                    <td>
+                        <a href="https://www.nvidia.com/ai-workbench" target="_blank">NVIDIA AI Workbench</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mai 2024</td>
+                    <td>Meta annonce Llama 3, avec des capacités avancées en traitement du langage naturel.</td>
+                    <td>
+                        <a href="https://ai.meta.com/llama-3" target="_blank">Meta AI</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Juin 2024</td>
+                    <td>DeepMind dévoile AlphaDev, optimisant les algorithmes pour une efficacité maximale.</td>
+                    <td>
+                        <a href="https://www.deepmind.com/alphadev" target="_blank">AlphaDev - DeepMind</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Juillet 2024</td>
+                    <td>Présentation d'un cadre éthique de développement IA par OpenAI.</td>
+                    <td>
+                        <a href="https://openai.com/ethics-framework" target="_blank">OpenAI Framework</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Août 2024</td>
+                    <td>Google introduit des outils IA avancés pour la santé via DeepMind Health.</td>
+                    <td>
+                        <a href="https://www.deepmind.com/health" target="_blank">DeepMind Health</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Septembre 2024</td>
+                    <td>OpenAI publie des guides sur l'éthique des LLM dans la recherche médicale.</td>
+                    <td>
+                        <a href="https://openai.com/research/ethics-in-llms" target="_blank">OpenAI Research</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Octobre 2024</td>
+                    <td>Déploiement de Copilot AI pour les équipes collaboratives chez Microsoft.</td>
+                    <td>
+                        <a href="https://www.microsoft.com/en-us/microsoft-copilot-teams" target="_blank">Microsoft Copilot Teams</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Novembre 2024</td>
+                    <td>L'UE adopte des régulations IA renforçant la transparence et la responsabilité.</td>
+                    <td>
+                        <a href="https://eur-lex.europa.eu/ai-act" target="_blank">AI Act - UE</a>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+            
+            <!-- Ajoutez votre contenu ici -->
+        </section>
+        
+    
+        <!-- Ajout d'un espace vide plus important pour placer les boutons plus bas -->
+        <div style="height: 300px;"></div>
+        <hr>
+        <div style="height: 30px;"></div>
+    
+        <!-- Ajout des boutons Stage 1, Stage 2, et Fermer plus bas dans la page -->
+        <div class="button-container">
+            <button id="btnStage1">Stage FOOPGP</button>
+            <button id="btnStage2">Stage 2</button>
+            <button id="btnFermer">Fermer</button>
+        </div>
+    
+        <!-- Sections Stage 1 et Stage 2 -->
+        <section id="stage1" class="stage hidden">
+            <h3>Contenu du Stage FOOPGP</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Activité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>27/05/2024</td>
+                        <td>
+                            <ul>
+                                <li>Présentation de l'association foopgp.</li>
+                                <li>Apprentissage/utilisation de commandes sous terminal Linux.</li>
+                                <li>Cours sur le PGP : à quoi ça sert ? Les signatures et les différentes clés (Clé publique, Clé privée).</li>
+                                <li>Création et utilisation de clés PGP ainsi que SSH liées à GitHub.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>28/05/2024</td>
+                        <td>
+                            <ul>
+                                <li>Présentation du site web de l'association.</li>
+                                <li>Apprentissage/utilisation du langage Go.</li>
+                                <li>Ajouter un nouveau membre dans l'association (nom, prénom, image, email et lien web pour les réseaux sociaux).</li>
+                                <li>Utilisation des commandes GitHub (git clone/status/add/commit/push).</li>
+                                <li>Git clone (cloner un dépôt) / status (regarder les changements) / add (ajouter les changements au fichier cloné) / commit (ajouter un message aux modifications (add)) / push (mettre à jour le dépôt distant avec les modifications locales)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>29/05/2024</td>
+                        <td>
+                            <ul>
+                                <li>Utilisation pour crypter des messages avec “evolution”, “clawsmail” et “mailvelope” avec la clé PGP.</li>
+                                <li>Recherche pour le site web pour changer l’ordre de classement des rapports de visio de l’association.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>30/05/2024</td>
+                        <td>
+                            <ul>
+                                <li>Réalisation du changement d’ordre des rapports de visio de l’association en ajoutant les dates et en utilisant des types appropriés, puis mise en place sur une branche GitHub en utilisant les commandes précédemment vues.</li>
+                                <li>Création de liens sur des pages pour le site web afin d'avoir une page en français et une page en anglais.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>31/05/2024</td>
+                        <td>
+                            <ul>
+                                <li>Utilisation de OpenKeychain et de K9 Mail pour envoyer des mails chiffrés depuis un téléphone Android avec la clé PGP.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>03/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Création de pages et suppression des liens entre les pages de langues différentes, traduction des pages non traduites.</li>
+                                <li>Visioconférence avec un membre de l’association, et mise en place du site avec la clé PGP.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>04/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Visioconférence avec un autre membre, à qui l’association foopgp a sous-traité, au travers de son entreprise (befox.fr), le système d’inscription et dons (via stripe et dolibarr). Il nous a expliqué comment cela fonctionne à partir de son code en PHP.</li>
+                                <li>Visioconférence avec Frédéric suite à la réunion de ce matin visant à voir les avancées des traductions des pages et de la page de dons ainsi que les propositions de fonctionnement.</li>
+                                <li>J’ai ensuite vérifié l’identité de Mael et de mon maître de stage et signé leur profil.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>05/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Mise en place des adhérents dans le Dolibarr de l’association, puis recherche d’une méthode pour automatiser la mise à jour des adhérents afin de vérifier s'ils ont payé leur cotisation.</li>
+                                <li>Nous avons utilisé un code Python pour convertir un format CSV en format JSON, ce qui nous permet de reprendre toutes les saisies du tableau pour les intégrer dans Dolibarr.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>06/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Correction des fautes sur le site web, utilisation des clés PGP pour committer sur le site test en utilisant la mienne ainsi que celle de Maël, puis découverte qu'un compte GitHub peut committer et un autre peut être l'auteur.</li>
+                                <li>Création d'un compte Codeberg.</li>
+                                <li>Création des personnes morales de l’association dans PGPid.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>07/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Installation de GameShell, un programme créé par Phyver pour apprendre les commandes shell.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Création de ma page dans les membres et création d’une page supplémentaire pour accueillir un résumé de mon stage dans la page blog.</li>
+                                <li>Continuation de GameShell pour apprendre les commandes Linux.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Nous avons donc mis en place les pages avec nos photos et une description simple respective, en créant aussi un doublon en anglais, puis ajouté à celles-ci des liens vers notre GitHub et notre clé publique PGP.</li>
+                                <li>Ensuite, en utilisant les commandes Git, nous les avons mises sur le serveur de test en attente de la validation de toute l’association, tout en réglant un problème d’image sur le blog de notre stage.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Amélioration de la page de blog créée pour le stage en utilisant Markdown, et mise en place d’images sur la page.</li>
+                                <li>Poursuite de l'utilisation de GameShell pour apprendre les commandes Linux.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Poursuite et fin des 42 niveaux de GameShell.</li>
+                                <li>Vérification de mon site avec EcoIndex pour évaluer son impact environnemental.</li>
+                                <li>Analyse d'un script shell automatisé utilisant IPFS (InterPlanetary File System) protocole de réseau pair-à-pair qui permet de stocker et de partager des données de manière décentralisée.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Amélioration et correction de la page de blog créée, ajout des Nitrokey tout en se renseignant sur le sujet, ainsi que la création de liens pour les mots (Nitrokey, Yubikey, OpenPGP, Codeberg, etc.).</li>
+                                <li>Mise en page de la page en anglais.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Amélioration de la page de blog avec les logos ainsi que de nouvelles informations sur les Yubikeys et création d’une page PGPid avec des captures d’écran expliquant son fonctionnement.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Amélioration du portfolio et, après une analyse du maître de stage, nous devons remettre le blog en forme et ajouter encore du contenu.</li>
+                                <li>Mise en forme des pages avec des explications pour certains logiciels comme K9 Mail et Evolution.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Amélioration et précision des logiciels et systèmes utilisés par l’entreprise sur le site web dans chaque partie.</li>
+                                <li>Problématique : Imposer la mise en place de lignes de code HTML dans un code Hugo.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Recherche sur la mise en page des images sur la page des solutions de l’association sur vos emails, etc. Problème : le CSS est fait en Bootstrap. J’ai essayé de mettre le CSS sur la page HTML, mais le problème persiste. J’ai donc changé le type de la page pour en créer une nouvelle afin de changer le CSS, mais je rencontre encore le même problème.</li>
+                                <li>Remplissage des pages qui n’étaient pas faites pour donner des précisions aux personnes qui souhaitent rejoindre l’association ou qui sont intéressées par le projet.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>J’ai réussi à enfin fixer la taille de l’image dans le fichier single.html et j’ai donc changé la taille de l’image pour qu’elle soit moins grande sur la page.</li>
+                                <li>Suite à cela, nous avons fait signer avec la clé PGP de Mael un dossier LibreOffice.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>24/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>J’ai continué le site web en ajoutant une nouvelle section dans la barre de navigation qui va permettre de se renseigner sur les signatures PGP des différents logiciels. Suite à cela, je cherchais un document et j’ai découvert la commande <code>git grep</code>.</li>
+                                <li>La commande "git grep" permet de rechercher des motifs dans les fichiers suivis par Git. Elle est particulièrement utile pour trouver rapidement des occurrences d’un texte spécifique dans le code source d'un projet Git.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>25/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Amélioration des pages précédemment créées et installation d’images sur les pages ainsi que l’utilisation de la commande <code>git stash</code>.</li>
+                                <li>La commande 'git stash' est utilisée pour sauvegarder temporairement les modifications en cours dans votre répertoire de travail sans les commettre. Cela permet de revenir à un état de travail propre, sans les modifications non validées, afin de pouvoir effectuer d'autres tâches, comme changer de branche ou appliquer des correctifs urgents.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>26/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Correction des problèmes que nous avions hier avec la nouvelle page.</li>
+                                <li>Configuration de la Nitrokey de l’association en utilisant le logiciel QRScan créé par notre maître de stage.</li>
+                                <li>Nouvelle commande telle que :
+                                    <ul>
+                                        <li>`gpg --card-edit` (sert à modifier la clé)</li>
+                                        <li>`gpg --card-status` (pour voir ce qu'il y a dans la carte)</li>
+                                        <li>`verify` (permet de vérifier ce qu’on a modifié)</li>
+                                    </ul>
+                                </li>
+                                <li>Amélioration de la page blog que nous avons créée en faisant des modifications proposées par les membres de l’association.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>27/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Mise en place de l’image précédemment créée dans le dossier "signature" en anglais.</li>
+                                <li>Utilisation de FontForge pour modifier les icônes SVG qui sont utilisées pour accéder aux différents réseaux des membres de l'association.</li>
+                                <li>Recherche sur l’utilisation du logiciel.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>28/06/2024</td>
+                        <td>
+                            <ul>
+                                <li>Nous avons continué à utiliser le logiciel FontForge pour importer les logos de Codeberg et Bluesky, mais nous avons rencontré quelques problèmes car les logos ne s'affichent pas encore sur le site.</li>
+                                <li>Nous avons également amélioré les pages de blog en ajustant la taille des éléments, ainsi qu'en effectuant des traductions et des corrections de fautes.</li>
+                                <li>Nous avons aussi cloné Fontawesome pour avoir plus de logos plus facilement.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>01/07/2024</td>
+                        <td>
+                            <ul>
+                                <li>Nous avons effectué des tests sur les Yubikey pour vérifier si le code PIN était verrouillé. En utilisant un code administrateur et de réinitialisation, nous avons pu en même temps remarquer des failles de sécurité.</li>
+                                <li>Amélioration du site web en important les logos de certaines applications (à terminer pour demain).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>02/07/2024</td>
+                        <td>
+                            <ul>
+                                <li>Nous avons effectué des tests sur les Yubikey pour vérifier si le code PIN était verrouillé.</li>
+                                <li>En utilisant un code administrateur et de réinitialisation, nous avons pu en même temps remarquer des failles de sécurité.</li>
+                                <li>Amélioration du site web en important les logos de certaines applications (à terminer pour demain).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>03/07/2024</td>
+                        <td>
+                            <ul>
+                                <li>Correction sur le site : mise à jour en anglais du blog.</li>
+                                <li>Utilisation et visualisation des visites du site (quel moteur de recherche utiliser, nombre de personnes, etc.).</li>
+                                <li>Mise en forme d’un nouveau portfolio en React.js et compréhension de son utilisation.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>04/07/2024</td>
+                        <td>
+                            <ul>
+                                <li>Correction et relecture des pages expliquant le fonctionnement de PGP, du chiffrement, etc.</li>
+                                <li>Ajout d'un logo dans Themify pour remplacer le logo de Twitter par celui de X.</li>
+                                <li>Changement du logo de Twitter en Bluesky dans la barre de navigation.</li>
+                                <li>Effectuer une demande de pull sur GitHub pour Themify afin d'ajouter mon commit, ce qui permettra de le mettre à jour et de le rendre disponible pour d'autres programmeurs.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div style="height: 300px;"></div>
+        <hr>
+        <div style="height: 30px;"></div>
+
+        <div class="projet-container">
+            <button id="GLPI">Gestion du patrimoine informatique</button>
+            <button id="GLPI2">Question sur la GLPI</button>
+            <button id="GLPI3">Helpdesk dans GLPI</button>
+            <button id="M2L">Application de gestion de compétitions sportives</button>
+            <button id="GSB">Application et site web de gestion des dépenses</button>
+            <button id="FermerTP">Fermer</button>
+        </div>
+        
+        <!-- Conteneur pour le PDF -->
+        <div class="pdf-container" id="pdfContainer">
+            <!-- Le PDF sera affiché ici -->
+        </div>
+        
+        
+
+        <div style="height: 600px;"></div>
+
+
+        
+    
+        <section id="stage2" class="stage hidden">
+            <h3>Contenu du Stage 2</h3>
+            <p>Voici les informations pour le Stage 2.</p>
+        </section>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>

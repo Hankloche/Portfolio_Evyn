@@ -1,0 +1,291 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 15px; /* Taille de la police */
+    text-align: center; /* Centrer le texte */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fond noir mat */
+    color: #fff;
+    padding-top: 80px; /* Laisser de la place pour la barre de navigation */
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e; /* Fond du header */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+nav {
+    position: relative;
+}
+
+ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul.nav-links li {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+ul.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styles pour le menu burger */
+.burger {
+    display: none; /* Cacher le burger par défaut */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: white; /* Couleur des lignes du burger */
+    margin: 4px 0;
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+    .burger {
+        display: flex; /* Afficher le burger sur petits écrans */
+    }
+
+    ul.nav-links {
+        display: none; /* Cacher le menu par défaut */
+        flex-direction: column; /* Orienter le menu en colonne */
+        position: absolute; /* Positionnement */
+        top: 60px; /* Ajuster selon besoin */
+        right: 20px; /* Ajuster selon besoin */
+        background-color: #1e1e1e; /* Fond du menu */
+        width: 200px; /* Largeur du menu */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Ombre */
+        z-index: 1; /* Pour s'assurer qu'il est au-dessus des autres éléments */
+    }
+
+    ul.nav-links.active {
+        display: flex; /* Afficher le menu lorsque 'active' est ajouté */
+    }
+
+    ul.nav-links li {
+        padding: 10px; /* Espacement pour chaque item du menu */
+    }
+}
+
+/* Autres styles */
+.button-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Styles pour les sections */
+.stage {
+    display: none;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.stage.hidden {
+    display: none;
+}
+
+.stage.active {
+    display: block;
+}
+
+/* Styles du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+tr:hover {
+    background-color: #444;
+}
+
+thead {
+    border-bottom: 2px solid #444;
+}
+
+/* Styles pour les sections stage et veille */
+.stage, .veille {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Styles pour les boutons dans Stage 1 */
+#stage1 .button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#stage1 .button-group button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#stage1 .button-group button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#stage1 .button-group button:focus {
+    outline: none;
+}
+
+/* Styles pour le bouton Fermer dans la section Stage 1 */
+#stage1 #btnFermerStage1 {
+    background-color: #dc3545; /* Red background */
+}
+
+#stage1 #btnFermerStage1:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Styles pour les boutons dans Veille */
+.veille-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.veille-container button {
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.veille-container button:hover {
+    background-color: #333;
+}
+
+.veille-container button:focus {
+    outline: none;
+}
+
+.veille {
+    display: none; /* Masqué par défaut */
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pdf-container {
+    display: none; /* Cacher le conteneur PDF par défaut */
+    margin: 20px auto; /* Centrer le conteneur */
+    padding: 20px; /* Espacement interne */
+    background-color: #1e1e1e; /* Fond du conteneur PDF */
+    border-radius: 10px; /* Coins arrondis */
+    max-width: 800px; /* Largeur maximale */
+}
+
+/* Style du PDF */
+.pdf-container iframe {
+    width: 100%; /* Largeur du PDF */
+    height: 800px; /* Hauteur ajustée pour un affichage plus grand */
+    border: none; /* Supprimer la bordure de l'iframe */
+}
